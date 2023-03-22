@@ -28,7 +28,7 @@ The database consists of the following tables:
 
 ## Data Generation
 
-To populate the database with realistic data, I used the Python library [INSERT LIBRARY NAME HERE] to generate random but plausible values for each field in each table. This allowed me to quickly create large amounts of data for testing and analysis.
+To populate the database with realistic data, I used the Python library Faker to generate random but plausible values for each field in each table. This allowed me to quickly create large amounts of data for testing and analysis.
 
 ## How to Use this Database
 
