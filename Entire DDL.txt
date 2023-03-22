@@ -1,0 +1,72 @@
+CREATE TABLE Users (
+    user_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    location TEXT NOT NULL
+);
+
+CREATE TABLE Businesses (
+    business_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    industry_type TEXT NOT NULL,
+    location TEXT NOT NULL
+);
+
+CREATE TABLE Energy_Consumption (
+    consumption_id INTEGER PRIMARY KEY,
+    user_business_id INTEGER NOT NULL,
+    energy_type TEXT NOT NULL,
+    usage_amount REAL NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Transportation_Habits (
+    transportation_id INTEGER PRIMARY KEY,
+    user_business_id INTEGER NOT NULL,transportation_mode TEXT NOT NULL,
+    distance REAL NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Waste_Production (
+    waste_id INTEGER PRIMARY KEY,
+    user_business_id INTEGER NOT NULL,
+    waste_type TEXT NOT NULL,
+    amount REAL NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Carbon_Footprint_Calculations (
+    calculation_id INTEGER PRIMARY KEY,
+    user_business_id INTEGER NOT NULL,
+    carbon_footprint REAL NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Recommendations (
+    recommendation_id INTEGER PRIMARY KEY,
+    user_business_id INTEGER NOT NULL, recommendation_type TEXT NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Sustainability_Goals (
+    goal_id INTEGER PRIMARY KEY,
+    business_id INTEGER NOT NULL,
+    goal_type TEXT NOT NULL,
+    target_value REAL NOT NULL,
+    target_date DATE NOT NULL
+);
+
+CREATE TABLE Progress_Tracking (
+    progress_id INTEGER PRIMARY KEY,
+    business_id INTEGER NOT NULL,
+    goal_id INTEGER NOT NULL,
+    current_value REAL NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE Social_Connections (
+    connection_id INTEGER PRIMARY KEY,
+user_id_1 INTEGER NOT NULL,
+    user_id_2 INTEGER NOT NULL,
+    connection_date DATE NOT NULL
+);

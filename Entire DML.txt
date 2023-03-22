@@ -1,0 +1,99 @@
+INSERT INTO Users (user_id, name, email, location) VALUES (1, 'Justin Anderson', 'pierceerica@example.com', 'South Petertown');
+INSERT INTO Users (user_id, name, email, location) VALUES (2, 'Peter May', 'vicki75@example.net', 'Padillachester');
+INSERT INTO Users (user_id, name, email, location) VALUES (3, 'Christopher Gill', 'jonesjoseph@example.com', 'South Crystalview');
+INSERT INTO Users (user_id, name, email, location) VALUES (4, 'John Jones', 'lauren36@example.com', 'North Margaret');
+INSERT INTO Users (user_id, name, email, location) VALUES (5, 'Samantha Davis', 'brianna77@example.org', 'Blackville');
+
+
+INSERT INTO Businesses (business_id, name, industry_type, location) VALUES (1, 'Nichols Group', 'Travel agency manager', 'East Kathleenmouth');
+INSERT INTO Businesses (business_id, name, industry_type, location) VALUES (2, 'Hanson, Glover and Maddox', 'Conservation officer, historic buildings', 'Baileyside');
+INSERT INTO Businesses (business_id, name, industry_type, location) VALUES (3, 'Dominguez-Watson', 'Seismic interpreter', 'New Laurahaven');
+INSERT INTO Businesses (business_id, name, industry_type, location) VALUES (4, 'Aguilar-Sims', 'Horticultural consultant', 'Hillton');
+INSERT INTO Businesses (business_id, name, industry_type, location) VALUES (5, 'Riddle-Smith', 'Outdoor activities/education manager', 'Ashleyburgh');
+
+
+
+INSERT INTO Energy_Consumption (consumption_id, user_business_id, energy_type, usage_amount, date) VALUES (1, 8, 'Water', 717.27, '2023-01-04');
+INSERT INTO Energy_Consumption (consumption_id, user_business_id, energy_type, usage_amount, date) VALUES (2, 7, 'Water', 552.84, '2022-06-23');
+INSERT INTO Energy_Consumption (consumption_id, user_business_id, energy_type, usage_amount, date) VALUES (3, 9, 'Electricity', 810.9, '2022-11-26');
+INSERT INTO Energy_Consumption (consumption_id, user_business_id, energy_type, usage_amount, date) VALUES (4, 4, 'Water', 522.26, '2023-01-13');
+INSERT INTO Energy_Consumption (consumption_id, user_business_id, energy_type, usage_amount, date) VALUES (5, 8, 'Water', 11.17, '2022-05-29');
+
+
+
+
+
+INSERT INTO Transportation_Habits (transportation_id, user_business_id, transportation_mode, distance, date) VALUES (1, 7, 'Train', 21.76, '2022-11-16');
+INSERT INTO Transportation_Habits (transportation_id, user_business_id, transportation_mode, distance, date) VALUES (2, 7, 'Walk', 3.76, '2023-02-22');
+INSERT INTO Transportation_Habits (transportation_id, user_business_id, transportation_mode, distance, date) VALUES (3, 8, 'Car', 60.75, '2022-06-23');
+INSERT INTO Transportation_Habits (transportation_id, user_business_id, transportation_mode, distance, date) VALUES (4, 9, 'Bike', 87.39, '2023-02-11');
+INSERT INTO Transportation_Habits (transportation_id, user_business_id, transportation_mode, distance, date) VALUES (5, 4, 'Train', 40.28, '2022-09-21');
+
+
+
+
+
+
+
+
+
+INSERT INTO Waste_Production (waste_id, user_business_id, waste_type, amount, date) VALUES (1, 10, 'Metal', 309.23, '2023-02-03');
+INSERT INTO Waste_Production (waste_id, user_business_id, waste_type, amount, date) VALUES (2, 6, 'Organic', 3.46, '2022-10-08');
+INSERT INTO Waste_Production (waste_id, user_business_id, waste_type, amount, date) VALUES (3, 6, 'Plastic', 224.52, '2023-01-01');
+INSERT INTO Waste_Production (waste_id, user_business_id, waste_type, amount, date) VALUES (4, 4, 'Organic', 651.13, '2022-07-20');
+INSERT INTO Waste_Production (waste_id, user_business_id, waste_type, amount, date) VALUES (5, 2, 'Organic', 833.73, '2022-08-23');
+
+
+
+
+INSERT INTO Carbon_Footprint_Calculations (calculation_id, user_business_id, carbon_footprint, date) VALUES (1, 2, 25.9, '2022-12-24');
+INSERT INTO Carbon_Footprint_Calculations (calculation_id, user_business_id, carbon_footprint, date) VALUES (2, 10, 78.84, '2023-02-13');
+INSERT INTO Carbon_Footprint_Calculations (calculation_id, user_business_id, carbon_footprint, date) VALUES (3, 2, 32.1, '2022-09-29');
+INSERT INTO Carbon_Footprint_Calculations (calculation_id, user_business_id, carbon_footprint, date) VALUES (4, 7, 16.4, '2023-02-06');
+INSERT INTO Carbon_Footprint_Calculations (calculation_id, user_business_id, carbon_footprint, date) VALUES (5, 4, 9.94, '2022-04-11');
+
+
+
+
+
+INSERT INTO Recommendations (recommendation_id, user_business_id, recommendation_type, date) VALUES (1, 10, 'Reduce Waste Production', '2022-05-19');
+INSERT INTO Recommendations (recommendation_id, user_business_id, recommendation_type, date) VALUES (2, 10, 'Reduce Waste Production', '2023-01-04');
+INSERT INTO Recommendations (recommendation_id, user_business_id, recommendation_type, date) VALUES (3, 1, 'Reduce Energy Consumption', '2022-08-11');
+INSERT INTO Recommendations (recommendation_id, user_business_id, recommendation_type, date) VALUES (4, 4, 'Switch to Renewable Energy', '2022-12-25');
+INSERT INTO Recommendations (recommendation_id, user_business_id, recommendation_type, date) VALUES (5, 5, 'Increase Recycling Efforts', '2022-10-05');
+
+
+
+INSERT INTO Sustainability_Goals (goal_id, business_id, goal_type, target_value, target_date) VALUES (1, 6, 'Increase Renewable Energy Usage', 40.75, '2024-10-14');
+INSERT INTO Sustainability_Goals (goal_id, business_id, goal_type, target_value, target_date) VALUES (2, 5, 'Increase Renewable Energy Usage', 41.12, '2027-07-28');
+INSERT INTO Sustainability_Goals (goal_id, business_id, goal_type, target_value, target_date) VALUES (3, 3, 'Increase Recycling Efforts', 54.48, '2026-10-24');
+INSERT INTO Sustainability_Goals (goal_id, business_id, goal_type, target_value, target_date) VALUES (4, 8, 'Reduce Water Consumption', 39.66, '2025-09-04');
+INSERT INTO Sustainability_Goals (goal_id, business_id, goal_type, target_value, target_date) VALUES (5, 8, 'Reduce Carbon Footprint', 89.18, '2024-07-11');
+
+
+
+INSERT INTO Progress_Tracking (progress_id, business_id, goal_id, current_value, date) VALUES (1, 4, 2, 27.47, '2022-07-20');
+INSERT INTO Progress_Tracking (progress_id, business_id, goal_id, current_value, date) VALUES (2, 7, 6, 40.66, '2022-08-11');
+INSERT INTO Progress_Tracking (progress_id, business_id, goal_id, current_value, date) VALUES (3, 5, 4, 69.33, '2022-06-21');
+INSERT INTO Progress_Tracking (progress_id, business_id, goal_id, current_value, date) VALUES (4, 6, 9, 6.74, '2022-12-12');
+INSERT INTO Progress_Tracking (progress_id, business_id, goal_id, current_value, date) VALUES (5, 7, 6, 67.75, '2022-06-15');
+
+
+
+
+
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (1, 4, 10, '2023-01-26');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (2, 4, 8, '2022-12-16');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (3, 4, 6, '2022-08-25');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (4, 1, 1, '2022-05-07');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (5, 2, 9, '2022-11-20');
+
+
+
+
+
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (1, 4, 10, '2023-01-26');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (2, 4, 8, '2022-12-16');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (3, 4, 6, '2022-08-25');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (4, 1, 1, '2022-05-07');
+INSERT INTO Social_Connections (connection_id, user_id_1, user_id_2, connection_date) VALUES (5, 2, 9, '2022-11-20');
